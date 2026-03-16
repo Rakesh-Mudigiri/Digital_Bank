@@ -1,0 +1,92 @@
+/* ─── Transaction History Page ─── */
+.txn-history-page { max-width: 960px; }
+
+.filters-bar {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  margin-bottom: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex: 1;
+  min-width: 200px;
+}
+
+.search-box input {
+  background: rgba(10, 15, 30, 0.6);
+  border: 1px solid var(--border-color);
+  color: var(--text-bright);
+  padding: 0.6rem 0.75rem;
+  border-radius: var(--radius-sm);
+  width: 100%;
+  font-size: 0.85rem;
+}
+
+.search-box input:focus { outline: none; border-color: var(--primary); }
+
+.filter-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.filter-group select {
+  background: rgba(10, 15, 30, 0.8);
+  border: 1px solid var(--border-color);
+  color: var(--text-bright);
+  padding: 0.6rem 0.75rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+}
+
+.txn-table-wrapper { padding: 0; overflow-x: auto; }
+
+.txn-table { width: 100%; border-collapse: collapse; }
+
+.txn-table th {
+  text-align: left;
+  padding: 0.85rem 1rem;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  border-bottom: 1px solid var(--border-color);
+  letter-spacing: 0.05em;
+  font-weight: 700;
+}
+
+.txn-table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.02);
+  font-size: 0.85rem;
+  color: var(--text-main);
+}
+
+.txn-table tr:hover { background: rgba(255, 255, 255, 0.02); }
+
+.type-badge {
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.type-badge.deposit { background: rgba(16, 185, 129, 0.1); color: var(--success); }
+.type-badge.withdrawal { background: rgba(244, 63, 94, 0.1); color: var(--danger); }
+.type-badge.transfer { background: rgba(99, 102, 241, 0.1); color: var(--primary); }
+.type-badge.bill_payment { background: rgba(245, 158, 11, 0.1); color: var(--warning); }
+
+.status-cell {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  text-transform: capitalize;
+  font-size: 0.8rem;
+}
+
+.ref-cell { font-family: monospace; font-size: 0.7rem; color: var(--text-muted); }

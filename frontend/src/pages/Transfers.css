@@ -1,0 +1,79 @@
+.transfers-page { max-width: 960px; }
+
+.transfers-grid {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.transfers-left {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.transfer-action-card {
+  padding: 2rem;
+}
+
+.transfer-action-card h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--text-bright);
+}
+
+.transfer-action-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, var(--primary), #818cf8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+}
+
+.transfer-info-card {
+  padding: 1.5rem;
+}
+
+.transfer-info-card h4 {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  font-size: 0.9rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.info-row:last-child { border-bottom: none; }
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.section-header h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-bright);
+}
+
+
+
+@media (max-width: 768px) {
+  .transfers-grid { grid-template-columns: 1fr; }
+}

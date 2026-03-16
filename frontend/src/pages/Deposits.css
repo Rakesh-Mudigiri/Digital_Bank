@@ -1,0 +1,74 @@
+/* ─── Fixed Deposits ─── */
+.deposits-page { max-width: 800px; }
+
+.fd-form-card { padding: 2rem; max-width: 480px; margin-bottom: 1.5rem; }
+.fd-form-card h3 { margin-bottom: 1.25rem; font-size: 1rem; font-weight: 700; color: var(--text-bright); }
+
+.fd-preview {
+  background: rgba(16, 185, 129, 0.05);
+  border: 1px solid rgba(16, 185, 129, 0.12);
+  border-radius: var(--radius-sm);
+  padding: 1rem;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+}
+
+.fd-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.fd-card { padding: 1.5rem; }
+
+.fd-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.fd-status {
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.fd-status.active { background: rgba(16, 185, 129, 0.1); color: var(--success); }
+.fd-status.matured { background: rgba(99, 102, 241, 0.1); color: var(--primary); }
+.fd-status.broken { background: rgba(244, 63, 94, 0.1); color: var(--danger); }
+
+.fd-amount { font-size: 1.5rem; font-weight: 800; color: var(--text-bright); margin-bottom: 1rem; }
+
+.fd-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.fd-details div { display: flex; align-items: center; gap: 0.4rem; }
+
+.btn-danger-outline {
+  background: transparent;
+  border: 1px solid var(--danger);
+  color: var(--danger);
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.8rem;
+  transition: all 0.2s;
+}
+
+.btn-danger-outline:hover { background: rgba(244, 63, 94, 0.08); }

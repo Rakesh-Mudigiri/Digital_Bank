@@ -1,0 +1,262 @@
+.support-page { max-width: 900px; }
+
+.support-summary-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.support-stat-card {
+  padding: 1.25rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.stat-num {
+  font-size: 1.8rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.stat-lbl {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Form */
+.support-form-panel {
+  padding: 1.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-section-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-bright);
+  margin-bottom: 1.25rem;
+}
+
+.support-form-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.form-row-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+/* Tickets */
+.support-tickets-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  margin-bottom: 1.5rem;
+}
+
+.ticket-card { padding: 0; overflow: hidden; }
+
+.ticket-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.1rem 1.25rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  gap: 1rem;
+}
+
+.ticket-header:hover { background: rgba(255, 255, 255, 0.02); }
+
+.ticket-left {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  min-width: 0;
+}
+
+.ticket-subject {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-bright);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ticket-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 0.2rem;
+}
+
+.ticket-cat {
+  background: rgba(99, 102, 241, 0.1);
+  color: var(--primary);
+  padding: 0.1rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.7rem;
+}
+
+.ticket-right {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-shrink: 0;
+}
+
+.ticket-badge {
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 0.25rem 0.65rem;
+  border-radius: 999px;
+}
+
+.ticket-priority {
+  font-size: 0.68rem;
+  font-weight: 600;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+.p-low    { background: rgba(16, 185, 129, 0.1); color: #10b981; }
+.p-medium { background: rgba(245, 158, 11, 0.1); color: #f59e0b; }
+.p-high   { background: rgba(239, 68, 68, 0.1);  color: #ef4444; }
+.p-urgent { background: rgba(220, 38, 38, 0.12); color: #dc2626; }
+
+.ticket-body {
+  border-top: 1px solid var(--border-color);
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Chat Threading */
+.ticket-chat-thread {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.015);
+  border-radius: var(--radius-sm);
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.chat-message {
+  max-width: 85%;
+  padding: 0.85rem 1rem;
+  border-radius: 12px;
+  line-height: 1.5;
+  font-size: 0.88rem;
+  position: relative;
+}
+
+.user-msg {
+  align-self: flex-end;
+  background: rgba(99, 102, 241, 0.1);
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  border-bottom-right-radius: 2px;
+}
+
+.admin-msg {
+  align-self: flex-start;
+  background: rgba(16, 185, 129, 0.08);
+  border: 1px solid rgba(16, 185, 129, 0.2);
+  border-bottom-left-radius: 2px;
+}
+
+.msg-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.35rem;
+}
+
+.msg-sender {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-bright);
+}
+
+.msg-time {
+  font-size: 0.65rem;
+  color: var(--text-muted);
+}
+
+.msg-text { color: var(--text-main); font-size: 0.85rem; }
+
+/* Follow up */
+.follow-up-area {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.follow-up-textarea {
+  min-height: 60px;
+  max-height: 120px;
+  resize: vertical;
+}
+
+.follow-up-actions {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.btn-sm { padding: 0.4rem 0.75rem; font-size: 0.75rem; }
+
+/* FAQ */
+.faq-section { padding: 1.5rem; }
+
+.faq-title {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+  margin-bottom: 1.25rem;
+}
+
+.faq-item {
+  padding: 0.85rem 0;
+  border-bottom: 1px solid var(--border-color);
+}
+.faq-item:last-child { border-bottom: none; }
+
+.faq-q {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-bright);
+  margin-bottom: 0.3rem;
+}
+
+.faq-a {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .support-summary-row { grid-template-columns: repeat(2, 1fr); }
+  .form-row-2 { grid-template-columns: 1fr; }
+}
